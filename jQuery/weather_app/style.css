@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.page{
+    width: 870px;
+    height: 500px;
+    background-color: rgb(182, 178, 178);
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+
+}
+.white_b{
+    background-color: white;
+    width: 480px;
+    height: 440px;
+    margin-left: 200px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.city{
+    margin-top: 50px;
+}
+.fahrenheit{
+    margin: 20px;
+    font-size: 136px;
+    display: inline-block;
+}
+.nameF{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 42px;
+    font-size: 20px;
+}
+.name{
+    margin-top: 25px;
+}

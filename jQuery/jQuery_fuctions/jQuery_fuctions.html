@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Functions</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+                
+                .class {
+                  background: rgb(24, 73, 179);
+                  color: white;
+                  font-family: 'Times New Roman', Times, serif;
+                  font-size: 20px;
+                }
+                
+        </style>
+       
+        
+        <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#click5').hide();
+            $('#click3').hide();
+            $('#click8').hide();
+            $('#button1').click(function(){
+                alert('You just pressed my button!');
+            
+            })
+            $('#button2').click(function(){
+                $('#click2').hide();
+            })
+            $('#button3').click(function(){
+                $('#click3').show();
+                
+            })
+            $('#button4').click(function(){
+                $('#click4').toggle();
+            })
+            $('#button5').click(function(){
+                $('#click5').slideDown();
+            })
+            $('#button6').click(function(){
+                $('#click6').slideUp();
+            })
+            $('#button7').click(function(){
+                $('#click7').slideToggle();
+            })
+            $('#button8').click(function(){
+                $('#click8').fadeIn();
+            })
+            $('#button9').click(function(){
+                $('#click9').fadeOut();
+            })
+            $('#button10').click(function(){
+                $('#click10').addClass('class');
+            })
+            $('#button11').click(function(){
+                $('#click11').before("<h1>Go<h1>");
+            })
+            $('#button12').click(function(){
+                $('#click12').after("<h1>Go<h1>");
+            })
+            $('#button13').click(function(){
+                $('#click13').append(" more");
+            })
+            $('#button14').click(function(){
+                $('#click14').html("<span class='class'>Hello <b>Again</b></span>" );
+            })
+            $('#button15').click(function(){
+                var title = $('em').attr('title');
+                $('#click15').text(title);
+
+                console.log(click15);
+            })
+            $( "button" ).click(function() {
+                var text = $( this ).text();
+                $( "input" ).val( text );
+            })
+            $('#button17').click(function(){
+                $('#click17').text("my new text" );
+            })
+            $('#button18').click(function(){
+                $( "#sent" ).data( "test", { first: 7, last: "goals" } );
+                $( "span:first" ).text( $( "#sent" ).data( "test" ).first );
+                $( "span:last" ).text( $( "#sent" ).data( "test" ).last );
+            })
+
+        
+        })
+    
+        </script>
+    </head>
+    <body>
+        
+        <div id="page">
+            <div class="boxes">
+                <button class="button_class" id="button1" type="button">Click</button>
+                <h1 id="click1">Click</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button2" type="button">Hide</button>
+                <h1 id="click2">Hide</h1>
+                <p>this hides</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button3" type="button">Show</button>
+                <h1 id="click3">Show</h1>
+                <p>shows the hidden text</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button4" type="button">Toggle</button>
+                <h1 id="click4">Toggle</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button5" type="button">Slide Down</button>
+                <h1 id="click5">Slide Down</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button6" type="button">Slide Up</button>
+                <h1 id="click6">Slide Up</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button7" type="button">Slide Toggle</button>
+                <h1 id="click7">Silde Toggle</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button8" type="button">Fade In</button>
+                <h1 id="click8">Fade In</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button9" type="button">Fade Out</button>
+                <h1 id="click9">Fade Out</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button10" type="button">Add Class</button>
+                <h1 id="click10">Add Class</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button11" type="button">Before</button>
+                <h1 id="click11">Before</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button12" type="button">After</button>
+                <h1 id="click12">After</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button13" type="button">Append</button>
+                <h1 id="click13">Append</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button14" type="button">HTML</button>
+                <h1 id="click14">HTML</h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button15" type="button">Attr</button>
+                <h1 id="click15"><h1>Atrr</h1></h1>
+                <p>You only click the button nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button16" type="button">Val</button>
+                <h1 id="click16">val</h1>
+                <p>You only click the button nothing exacting going on</p>
+                <div>
+                    <button>Feed</button>
+                    <button>the</button>
+                    <button>Input</button>
+                </div>
+                <input type="text" value="click a button">
+                
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button17" type="button">text</button>
+                <h1 id="click17">text</h1>
+                <p>You only click the button <em title="new attr">nothing</em>nothing exacting going on</p>
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button18" type="button">data</button>
+                <h1 id="click18">data</h1>
+                <div id="sent">
+                    I score
+                    <span></span>
+                    <span></span>
+                    yeaaa
+                </div>
+                <p id="data">You only click the button nothing exacting going on</p>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,148 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+#name {
+    align-self: auto;
+    width: 565px;
+    margin-left: 44px;
+}
+#master_of{
+    text-align: right;
+    
+}
+#name, #master_of{
+    display: inline-block;
+    
+    margin-bottom: 15px;
+}
+#top_header{
+    background-color: white;
+    margin-bottom: 15px;
+}
+#main_content{
+    width: 920px;
+    height: 1000px;
+    background-color: rgb(113, 89, 99);
+    margin: 20px auto;
+    
+}
+#me{
+    
+    height: 258px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(192, 192, 192);
+    display: inline-block;
+    background-color: blue;
+    margin-right: 20px;
+    margin-left: 22px;
+}
+.text{
+    height: 268px;
+    width: 444px;
+    background-color: white;
+    vertical-align: top;
+    display: inline-block;
+
+    
+}
+#about_title{
+    height: 20px;
+    background-color: rgb(143, 142, 153);
+    color: white;
+    padding: 10px;
+    
+}
+#p1, #p2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#link1{
+    margin-top: 20px;
+    margin: 10px;
+    
+}
+#link1_content {
+    color: black;
+}
+.sub_image{
+    width: 278px;
+}
+.icons{
+    height: 40px;
+    padding: 4px;
+}
+.icons_stack{
+    margin-top: 5px;
+    margin-left: 9px;
+}
+#stack{
+    display: inline-block;
+    margin-left: 22px;
+}
+.sub_stack{
+    display: inline-block;
+    width: 278px;
+    height: 563px;
+    background-color: white;
+    vertical-align: top;
+    margin-top: 15px;
+    
+}
+#sub_2{
+    margin-right: 15px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+
+.sub_title{
+    height: 23px;
+    background-color: rgb(143, 142, 153);
+    color: white;
+    padding: 10px;
+}
+.sub_text{
+    padding: 8px;
+    height: 154px;
+    font-size: 93%;
+}
+.sub_button{
+    background-color: rgb(56, 125, 99);
+    margin-left: 100px;
+    border: grey;
+    color: white;
+    padding: 6px 7px 6px 7px;
+    border-radius: 7px;
+}
+#contact_me{
+    background: white;
+    margin-top: 20px;
+    padding: 10px;
+    height: 52px;
+}
+#per_info{
+    text-align: center;
+}
+.net_icons{
+    height: 20px;
+    
+}
+.net_webs{
+    display: inline-block;
+    margin-top: 15px;
+}
+.netweb{
+    color: black;
+}
+#network{
+    text-align: center;
+}
+
+#network img {
+    vertical-align: -31%;
+}

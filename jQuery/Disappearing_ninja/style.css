@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.page{
+    margin: 20px auto;
+    width: 970px;
+    height: 550px;
+    background-color: rgb(134, 134, 134);
+}
+.page img {
+    width: 219px;
+    
+    margin: 10px;
+}
+.page button{
+    width: 500px;
+    padding: 10px;
+    font-size: 25px;
+    margin-left: 230px;
+    border-radius: 15px;
+
+    
+}

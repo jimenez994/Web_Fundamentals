@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Functions</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+                
+                .red {
+                  background: red;
+                  font-size: 10px;
+                }
+                .red.green {
+                  background: green;
+                }
+                .white {
+                    font-size: 22px;
+                }
+        </style>
+       
+        
+        <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+           
+            $('#button1').click(function(){
+                $('#click1').addClass("red");
+            
+            })
+            $('#button2').click(function(){
+                $("#click2").before("<h2>SUP<h2>");
+            })
+            $('#button3').click(function(){
+                $("#click3").after("<h2>last<h2>");
+                
+            })
+            $('#button4').click(function(){
+                $("#click4").append(" added it");
+            })
+        
+        })
+    
+        </script>
+    </head>
+    <body>
+        <div id="page">
+            <div class="boxes">
+                <button class="button_class" id="button1" type="button">AddClass</button>
+                <h2 id="click1">AddClass</h2>
+                <!-- <p>You only click the button nothing exacting going on</p> -->
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button2" type="button">Before</button>
+                <h2 id="click2">Before</h2>
+                <!-- <p>this hides</p> -->
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button3" type="button">After</button>
+                <h2 id="click3">After</h2>
+                <!-- <p>shows the hidden text</p> -->
+            </div>
+            <div class="boxes">
+                <button class="button_class" id="button4" type="button">Append</button>
+                <h2 id="click4">Append</h2>
+                <!-- <p>You only click the button nothing exacting going on</p> -->
+            </div>
+        </div>
+
+    </body>
+
+</html>

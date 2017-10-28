@@ -1,0 +1,21 @@
+ls
+cd desktop
+mkdir test
+cd test 
+touch index.html
+touch style.css
+touch commands.txt
+cp index.html index_2.html
+rm style.css
+cd ..
+mkdir destination
+cd test
+mv index.html ../destination/index.html
+cd ..
+cd test
+ls
+cd ..
+cd destination
+ls
+cd ..
+rm -R destination

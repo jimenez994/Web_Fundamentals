@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.page{
+    background-color: rgb(202, 202, 202);
+    margin: 20px auto;
+    width: 970px;
+    height: 1000px;
+    padding: 20px;
+}
+.cards{
+    width: 301px;
+    display: inline-block;
+    
+}
+.cards div{
+    width: 280px;
+    height: 150px;
+    display: inline-block;
+    outline: 2px solid black;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 160px;
+}
+.cards div h1{
+    margin-bottom: 20px;
+}
+#form1{
+
+    width: 340px;
+    display: inline-block;
+    vertical-align: top;
+}

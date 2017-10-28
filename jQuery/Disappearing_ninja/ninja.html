@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).css('visibility','hidden');
+            });
+            $('button').click(function(){
+                $('img').css('visibility','visible')
+            })
+        
+        })
+        </script>
+        <title>Ninja</title>
+    </head>
+    <body>
+        <div class="page">
+            <img src="image.png" alt="just an image">
+            <img src="image.png" alt="just an image">
+            <img src="image.png" alt="just an image">
+            <img src="image.png" alt="just an image">
+            <img src="image.png" alt="just an image">
+            <img src="image.png" alt="just an image">
+            <img src="image.png" alt="just an image">
+            <img src="image.png" alt="just an image">
+            <button type="button">Reset</button>
+
+        </div>
+    </body>
+</html>

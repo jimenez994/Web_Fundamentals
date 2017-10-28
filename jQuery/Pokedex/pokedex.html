@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Poekedex</title>
+        
+        <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+            $(document).ready(function(){
+                
+               for(var i = 1; i < 152; i++){
+                   $('.pokemons').append("<img id="+i+" src='https://pokeapi.co/media/img/"+i+".png'>");  
+               }
+               $("img").click(function(){
+                   var id = $(this).attr("id");
+                   $.get("https://pokeapi.co/api/v2/pokemon/"+id+"/", function(res) {
+                    var Vname  = (res.name);
+                    var Vimg = "https://pokeapi.co/media/img/"+id+".png"
+                    var Vtype1 = "";
+                    var Vtype2 = "";
+                    if (res.types.length == 1){
+                        Vtype1 = (res.types[0].type.name);
+                        
+                    }
+                    if (res.types.length == 2){
+                        Vtype1 = (res.types[0].type.name); 
+                        Vtype2 = (res.types[1].type.name);
+                    }
+                    var Vhight = (res.height);
+                    var Vweight = (res.weight);
+                    $(".name").text(Vname);
+                    $(".pokeImg").attr("src",Vimg);
+                    if (res.types.length == 1){
+                        $(".type1").text(Vtype1);
+                        $(".type2").text("");
+                    } else
+                    
+                    {
+                        $(".type1").text(Vtype1);
+                        $(".type2").text(Vtype2);
+                    }
+                    $(".height").text(Vhight);
+                    $(".weight").text(Vweight);
+                    console.log(name);
+                    console.log(res);
+                    $(".pokedex").css("visibility","visible");
+                }, 'json');
+                   console.log(id);
+                  
+               });
+            });
+        </script>
+        
+    </head>
+    <body>
+        <div class="page">
+            <div class="pokemons">
+
+            </div>
+                <div class="pokedex">
+                    <div class="whiteB">
+                        <h1 class="name"></h1>
+                        <img class="pokeImg" src="">
+                        <h3>Types</h3>
+                        <p class="type1"></p>
+                        <p class="type2"></p>
+                        <h3>Height</h3>
+                        <p class="height"></p>
+                        <h3>Weight</h3>
+                        <p class="weight"></p>
+                    </div>
+                </div>  
+
+        </div>
+    </body>
+</html>

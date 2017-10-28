@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.page{
+    width: 970px;
+    height: 800px;
+    margin: 20px auto;
+    background-color: rgb(141, 137, 137);
+    padding: 20px;
+}
+#myTable{
+    outline: 1px solid black;
+    margin: 30px;
+    width: 910px;
+    text-align: center;
+}

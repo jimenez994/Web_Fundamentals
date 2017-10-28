@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY Weather App</title>
+        <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('#form1').submit(function() {
+                var Vcity = $(".city").val();
+                console.log(Vcity);
+                // your code here (build up your url)
+                $.get("http://api.openweathermap.org/data/2.5/weather?q="+Vcity+"/forecast?id=524901&APPID=bb9e615b330eecf16100fe0b2e388e96", function(res) {
+                    console.log(res);
+                    var location_name = (res.name);
+                    var F = Math.round(((res.main.temp)-273.15)*1.800+32.00);
+                     
+                    $(".name").text(location_name);
+                    $(".fahrenheit").text(""+F+"");
+                    $(".nameF").text("°F");
+                    $(".temp").text("Temperature")
+                 }, 'json');
+                // don't forget to return false so the page doesn't refresh
+                return false;
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+        <div class="page">
+            <div class="white_b">
+                <form id="form1" action="process.php" method="post">
+                    Search City<input class="city" type="text" name="city">
+                        
+                    <input type="submit" value="sumit!">
+                </form>
+                <div id ="temp">
+                    <h1 class="name"></h1>
+                    <h1 class="fahrenheit"></h1>
+                    <p class="nameF"></p>
+                    <p class="temp"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

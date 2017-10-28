@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Contact Card</title>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#form1").submit(function(){
+                    var first = $(".first_name").val()
+                    var last = $(".last_name").val()
+                    var description = $(".description_box").val()
+                    $(".cards").append($("<div><h1 description='"+description+"'>"+first+' '+last+"</h1><h5 description='"+description+"' class='secondhalf'>Click for description!</h5>"))
+                    
+                    return false
+                });
+                $(document).on('click','.secondhalf', function(){
+                    var description2 = $(this).attr('description');
+                    $(this).html(description2);
+                    
+                    console.log(description2);
+
+                })
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="page">
+            <form id="form1" action="process.php" method="post">
+                First Name<input class="first_name" type="text" name="first_name"><br>
+                Last Name<input class="last_name" type="text" name="last_name"><br>
+                <label for="descriptionself">A short description about yourself:</label> <br/>
+                <textarea class="description_box" type="text" placeholder="text" rows="8" cols="50">
+                </textarea><br>
+                <input type="submit" value="sumit!">
+                
+            </form>
+            <div class="cards">
+                
+            </div>
+        </div>
+    </body>
+</html>

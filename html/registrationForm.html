@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h3>Registration Form</h3><br>
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name"> <br/>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name"> <br/>
+            <label for="email"> Email:</label>
+            <input type="text" id="email" name="email"> <br/>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"> <br/>
+            <label for="pwpassword">PW Password</label>
+            <input type="pwpassword" id="pwpassword" name="pwpassword"> <br/>
+        </div>
+        <div>
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday"> <br/>
+            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other <br/>
+        </div>
+        <div>
+            <label for="descriptionself">A short description about yourself:</label> <br/>
+            <textarea rows="4" cols="50">
+            </textarea> <br/>
+        </div>
+        <div>
+        <form action="/action_page.php">
+            <label for="favoriteLanguage">Favorite Language:</label>
+            <select name="language">
+                <option value="language">Language</option>
+                <option value="java">Java</option>
+                <option value="swift">Swift</option>
+                <option value="python">Python</option>
+            </select><br/>
+        </form> 
+        </div>
+        <input type="submit" value="Submit">
+
+    </body>
+</html>

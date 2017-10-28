@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+.page{
+    margin: 20px auto;
+    width: 300px;
+    height: 460px;
+    background-color: rgb(105, 104, 104);
+    padding: 50px;
+}
+.page img {
+    display: block;
+    width: 300px;
+    margin-bottom: 1px;
+}

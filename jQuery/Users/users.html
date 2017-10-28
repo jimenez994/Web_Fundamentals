@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Users</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript" src="tablesorter-master/jquery-latest.js"></script> 
+        <script type="text/javascript" src="tablesorter-master/jquery.tablesorter.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#form1").submit(function(){
+                var first = $(".first_name").val()
+                var last = $(".last_name").val()
+                var email = $(".email").val()
+                var contact = $(".contact").val()
+                $("#myTable").append($("<tr><td>"+ first + "</td><td>"+ last + "</td><td>"+ email + "</td><td>"+ contact + "</td>"))
+                
+                return false
+
+            });
+            { 
+                $("#myTable").tablesorter( {sortList: [[0,0], [1,0]]} );  
+            } 
+           
+
+        }); 
+        </script>
+    </head>
+    <body>
+        <div class="page">
+            <table id="myTable" class="tablesorter"> 
+                <thead> 
+                <tr> 
+                    <th>Fisrt Name</th> 
+                    <th>Last Name</th> 
+                    <th>Email Address</th>  
+                    <th>Contact#</th> 
+                </tr> 
+                </thead> 
+                <tbody> 
+                <tr> 
+                    <td>John</td> 
+                    <td>Smith</td> 
+                    <td>jsmith@gmail.com</td>  
+                    <td>7048992433</td> 
+                </tr>   
+                </tbody> 
+            </table> 
+            <form id="form1" action="process.php" method="post">
+                First Name<input class="first_name" type="text" name="first_name">
+                Last Name<input class="last_name" type="text" name="last_name">
+                Email<input class="email" type="text" name="email">
+                contact<input class="contact" type="text" name="contact">
+                <input type="submit" value="sumit!">
+            </form>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#page{
+    background-color: rgb(18, 53, 91);
+    width: 970px;
+    height: 525px;
+    margin: 20px auto;
+    padding: 10px 10px 15px 10px;
+}
+#head{
+    background-color: rgb(215, 38, 56);
+    height: 30px;
+    border-radius: 10px;
+    padding: 15px;
+}
+#title{
+    color: rgb(189, 213, 232);
+}
+
+#middle{
+    
+    height: 80%;
+    width: 100%;
+    display: inline-block;
+    
+}
+#left_side{
+    display: inline-block;
+    width: 17%;
+    height: 47%;
+    background-color: rgb(8, 126, 139);
+    vertical-align: top;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    text-decoration: underline;
+    color: rgb(70, 211, 218);
+    font-size: 13px;
+}
+#home{
+    margin-left: 12px;
+    margin-top: 10px;
+    
+}
+#left_IN{
+    
+    margin-left: 25px;
+    line-height: 15px;
+}
+#subs{
+    margin-left: 15px;
+}
+#text_box{
+    display: inline-block;
+    width: 81%;
+    height: 93%;
+    background-color: rgb(12, 24, 33);
+    border-radius: 10px;
+    margin-top: 15px;
+    color: rgb(189, 212, 231);
+}
+#sub_title{
+    margin-left: 12px;
+    margin-top: 20px;
+}
+#text{
+    margin-left: 12px;
+    font-size: 13px;
+    margin-top: 8px;
+}
+#lots_of_text{
+    margin-left: 28px;
+    margin-top: 8px;
+    font-size: 13px;   
+}
+.sub_texts{
+    margin-bottom: 6px;
+}
+#bottom{
+    height: 15px;
+    width: 97%;
+    background-color: gray;
+    border-radius: 15px;
+    color: rgb(189, 212, 231);
+    font-size: 13xp;
+    padding: 15px;
+}
+.blue_text{
+    color: rgb(64, 199, 217);
+    text-decoration: underline;
+}
+.purple_text{
+    color: rgb(98, 119, 211);
+}
+#last_text{
+    font-size: 13px;
+}
