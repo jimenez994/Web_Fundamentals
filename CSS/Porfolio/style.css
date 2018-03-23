@@ -1,5 +1,5 @@
 *{
-margin: 0px;
+margin: auto;
 padding: 0px;
 }
 #name {
@@ -24,7 +24,7 @@ padding: 0px;
     width: 920px;
     height: 1000px;
     background-color: rgb(113, 89, 99);
-    margin: 20px auto;
+    /* margin: 20px auto; */
     
 }
 #me{
