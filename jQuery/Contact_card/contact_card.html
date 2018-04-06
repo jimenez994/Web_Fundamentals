@@ -11,17 +11,13 @@
                     var last = $(".last_name").val()
                     var description = $(".description_box").val()
                     $(".cards").append($("<div><h1 description='"+description+"'>"+first+' '+last+"</h1><h5 description='"+description+"' class='secondhalf'>Click for description!</h5>"))
-                    
                     return false
                 });
                 $(document).on('click','.secondhalf', function(){
                     var description2 = $(this).attr('description');
                     $(this).html(description2);
-                    
-                    console.log(description2);
-
+                    console.log(this);
                 })
-
             });
         </script>
     </head>
