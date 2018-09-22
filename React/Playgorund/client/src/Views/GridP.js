@@ -4,7 +4,7 @@ class GridP extends Component {
   render() {
     return (
       <div>
-        
+        gridP
       </div>
     );
   }
