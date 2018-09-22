@@ -1,13 +1,13 @@
 import React from 'react';
 import {AppBar, Toolbar, Typography} from '@material-ui/core'
 
-const Header = () => {
+const Navbar = () => {
   return (
     <div >
       <AppBar position="static" color="primary">
         <Toolbar >
           <Typography variant="title" color="inherit" >
-            Exercice Database
+            Exercice Database   
           </Typography>
         </Toolbar>
       </AppBar>
@@ -15,4 +15,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

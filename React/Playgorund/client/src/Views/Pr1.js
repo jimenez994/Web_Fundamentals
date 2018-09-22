@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Header from '../Componets/Header'
-import Body from '../Componets/Body'
-import Footer from '../Componets/Footer'
+import Header from '../Componets/layout/Navbar'
+import Body from '../Componets/layout/Landing'
+import Footer from '../Componets/layout/Footer'
 
 class Pr1 extends Component {
   render() {
