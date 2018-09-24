@@ -13,10 +13,10 @@ class App extends Component {
       <Router> 
         <div className="App">
           <Navbar/>
-          < div className = "container" >
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/material-ui" component={GridP} />
-          </div>
+            <div className = "container" >
+              <Route exact path="/" component={Landing} />
+              <Route exact path="/material-ui" component={GridP} />
+            </div>
           <Footer/>
         </div>
       </Router>

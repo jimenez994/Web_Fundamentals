@@ -1,23 +1,37 @@
 import React from 'react';
-import {AppBar, Toolbar, Typography} from '@material-ui/core'
+import {AppBar, Toolbar, Typography} from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
+import {  Button, IconButton } from '@material-ui/core'
+import PropTypes from 'prop-types';
 
-
-const Navbar = () => {
+const styles = theme => ({
+  button: {
+    color: 'white',
+    '&:hover': {
+      color: 'white'
+    }
+  },
+})
+const Navbar = (props) => {
+  const {classes} = props
   return (
-    <div >
-      <AppBar position="static" color="primary">
+      <AppBar position="static">
         <Toolbar >
-          <Typography variant="title" color="inherit" >
-            Exercice Database   
-          </Typography>
-          <Link className="nav-link" to="/material-ui">
+          <Button component={Link} to="/" className={classes.button}>
+              Exercice Database   
+          </Button>
+          <Button component={Link} to="/material-ui">
             Dashboard
-          </Link>
+          </Button>
         </Toolbar>
       </AppBar>
-    </div>
   );
 };
+//   ***** need to learn of how proptypes are being use here
+// Navbar.propTypes = {
+//   classes: PropTypes.object.isRequired,
+// };
 
-export default Navbar;
+
+export default withStyles(styles)(Navbar);
