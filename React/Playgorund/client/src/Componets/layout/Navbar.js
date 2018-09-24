@@ -9,7 +9,8 @@ const styles = theme => ({
   button: {
     color: 'white',
     '&:hover': {
-      color: 'white'
+      color: 'white',
+      // backgroudColor: ''
     }
   },
 })
@@ -21,17 +22,18 @@ const Navbar = (props) => {
           <Button component={Link} to="/" className={classes.button}>
               Exercice Database   
           </Button>
-          <Button component={Link} to="/material-ui">
+          <Button component={Link} to="/material-ui" className={classes.button}>
             Dashboard
           </Button>
         </Toolbar>
       </AppBar>
   );
 };
-//   ***** need to learn of how proptypes are being use here
-// Navbar.propTypes = {
-//   classes: PropTypes.object.isRequired,
-// };
+
+// it looks like a validator to make sure that the classes we are passing is an odject and is Required 
+Navbar.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 
 export default withStyles(styles)(Navbar);
