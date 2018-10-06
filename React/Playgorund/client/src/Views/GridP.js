@@ -1,13 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+import {Paper, Grid, withStyles} from '@material-ui/core';
 
-class GridP extends Component {
-  render() {
-    return (
-      <div>
-        gridP
-      </div>
-    );
+const styles = theme => ({
+  GridContent: {
+    margingTop: '4px',
+    color: 'blue'
   }
+  
+})
+
+const GridP = (props) =>  {
+  const  {classes} = props
+  return (
+    <div>
+      <Grid container className={classes.GridContent}>
+        <Grid item >
+
+        </Grid>
+        hello 
+      </Grid>
+    </div>
+  );
+}
+GridP.propTypes = {
+  classes: PropTypes.object.isRequired
 }
 
-export default GridP;
+export default withStyles(styles)(GridP);

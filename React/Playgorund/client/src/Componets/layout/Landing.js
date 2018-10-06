@@ -13,14 +13,14 @@ const Body = () => {
       textAlign: 'center',
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
     },
-    // GridContent: {
-    //   marginTop: '4px',
-    //   paddingLeft: '5px',
-    //   paddingRight: '5px',
-    // }
+    GridContent: {
+      marginTop: '4px',
+      // paddingLeft: '5px',
+      // paddingRight: '5px',
+    }
   }
   return (
-      <Grid container justify="center" spacing={8} style={style.GridContent} >
+      <Grid  container justify="center" spacing={8} style={style.GridContent} >
         <Grid item xs >
           <Paper  style={style.gridItem}>
             This is item one
