@@ -10,6 +10,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1>Weather App</h1>
+          <p>Checking if this works on git hub</p>
           <Weather/>
         </header>
       </div>
